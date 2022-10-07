@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="78" total="79" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-07T21:03:36 IST" name="Default suite" finished-at="2022-10-07T21:03:39 IST" duration-ms="3218">
+    <groups>
+    </groups>
+    <test started-at="2022-10-07T21:03:36 IST" name="Default test" finished-at="2022-10-07T21:03:39 IST" duration-ms="3218">
+      <class name="_Automation.Spotify.spotify">
+        <test-method signature="get_Request_Get_Show_Episodes()[pri:0, instance:_Automation.Spotify.spotify@48ae9b55]" started-at="2022-10-07T21:03:36 IST" name="get_Request_Get_Show_Episodes" finished-at="2022-10-07T21:03:39 IST" duration-ms="3170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_Request_Get_Show_Episodes -->
+      </class> <!-- _Automation.Spotify.spotify -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
