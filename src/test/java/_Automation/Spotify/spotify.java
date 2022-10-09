@@ -7,6 +7,8 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
+
 public class spotify {
 	
 	public String token= "Bearer BQADm5Ff5dLPfFc_kEgAfbdxSKMxFQ8HJ8dOGX1i7ihUwrpoX9s_HlGgTiJS8ZZPzBhphmIGkOEK89QLnINOfLF2MuHLsdwnqSBS6eqImtQJtEJPACWXNu7TI3-gyjLfIecPk_VG9FzUnBRVH-8ofdgCruMqwV5KQe3XadIBxQ8T6kn2DNNc6vH2whBFe3AiouA2KZaSZWZWzv3nmrCsDgZUN-4SklnOjr4gaSZR";
@@ -893,6 +895,7 @@ public class spotify {
  				.put("https://api.spotify.com/v1/me/player/repeat?state=context&device_id=0d1841b0976bae2a3a310dd74c0f3df354899bc8");
  		response.prettyPrint();
 	}
+	
 	@Test
 	public void put_Request_Seek_To_Position() {
 		Response response = given()
@@ -935,6 +938,22 @@ public class spotify {
  				.when()
  				.put("https://api.spotify.com/v1/me/player/volume?volume_percent=50&device_id=0d1841b0976bae2a3a310dd74c0f3df354899bc8");
  		response.prettyPrint();
+	}
+	@Test
+	public void PetStore_Upload_Image() {
+		File file = new File("C:\\Users\\manju\\OneDrive\\Desktop\\dog.jpg");
+		Response response= given()
+				.accept("application/json")
+				.contentType("multipart/form-data")
+				.multiPart(file)
+				.when()
+				.post("https://petstore.swagger.io/v2/pet/1/uploadImage");
+		response.prettyPrint();
+		response.then().assertThat().statusCode(200);
+		String Name=response.path("type");
+ 		Assert.assertEquals("unknown",Name);
+ 		System.out.println(Name);
+		
 	}
 	
 

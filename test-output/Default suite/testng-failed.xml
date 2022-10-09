@@ -5,7 +5,7 @@
     <classes>
       <class name="_Automation.Spotify.spotify">
         <methods>
-          <include name="get_Request_Get_Show_Episodes"/>
+          <include name="PetStore_Upload_Image"/>
         </methods>
       </class> <!-- _Automation.Spotify.spotify -->
     </classes>

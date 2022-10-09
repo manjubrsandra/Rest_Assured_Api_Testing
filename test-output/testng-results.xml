@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="78" total="79" passed="1" failed="0" skipped="0">
+<testng-results ignored="79" total="80" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-07T21:03:36 IST" name="Default suite" finished-at="2022-10-07T21:03:39 IST" duration-ms="3218">
+  <suite started-at="2022-10-09T20:48:59 IST" name="Default suite" finished-at="2022-10-09T20:49:03 IST" duration-ms="4191">
     <groups>
     </groups>
-    <test started-at="2022-10-07T21:03:36 IST" name="Default test" finished-at="2022-10-07T21:03:39 IST" duration-ms="3218">
+    <test started-at="2022-10-09T20:48:59 IST" name="Default test" finished-at="2022-10-09T20:49:03 IST" duration-ms="4191">
       <class name="_Automation.Spotify.spotify">
-        <test-method signature="get_Request_Get_Show_Episodes()[pri:0, instance:_Automation.Spotify.spotify@48ae9b55]" started-at="2022-10-07T21:03:36 IST" name="get_Request_Get_Show_Episodes" finished-at="2022-10-07T21:03:39 IST" duration-ms="3170" status="PASS">
+        <test-method signature="PetStore_Upload_Image()[pri:0, instance:_Automation.Spotify.spotify@1700915]" started-at="2022-10-09T20:48:59 IST" name="PetStore_Upload_Image" finished-at="2022-10-09T20:49:03 IST" duration-ms="4145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_Request_Get_Show_Episodes -->
+        </test-method> <!-- PetStore_Upload_Image -->
       </class> <!-- _Automation.Spotify.spotify -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
